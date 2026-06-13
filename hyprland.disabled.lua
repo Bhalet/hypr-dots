@@ -1,4 +1,8 @@
--- Sourcing external config files
+-- =======================
+-- Main Configuration File
+-- =======================
+
+-- Used For Sourcing external config files
 
 
 local configHome = os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")
@@ -14,6 +18,9 @@ end
 -- via lua/user_overrides.lua. Base lua/*.lua modules are templates and should
 -- not also be loaded directly here, or bindings/settings can be duplicated.
 
+-- I dont know what the comments above mean
+
+load_module("settings")
 load_module("user_defaults")
 load_module("user_overrides")
 load_module("monitors")
