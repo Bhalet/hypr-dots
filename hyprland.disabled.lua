@@ -26,4 +26,5 @@ load_module("user_overrides")
 load_module("monitors")
 load_module("workspaces")
 load_module("env_variables")
+load_module("user_decor")
 
