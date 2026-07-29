@@ -3,7 +3,7 @@
 -- ================
 
 -- [NOTE]
--- Some settings are in decorations.lua
+-- Some settings are in decor.lua
 -- 0 = of; 1 = on; 2 = auto
 
 
