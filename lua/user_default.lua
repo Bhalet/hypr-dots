@@ -18,7 +18,7 @@ end
 
 -- Make Changes Here
 DEFAULTS.edit = "vim"
-DEFAULTS.visual = "vim"
+--DEFAULTS.visual = "vim"
 DEFAULTS.term = "kitty"
 DEFAULTS.files = "nemo"
 DEFAULTS.mail = "thunar"
