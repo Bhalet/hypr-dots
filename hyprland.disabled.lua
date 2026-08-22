@@ -8,8 +8,20 @@
 local configHome = os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")
 local hyprDir = configHome .. "/hypr"
 
+
+-- For files under lua/
 local function load_module(name)
   dofile(hyprDir .. "/lua/" .. name .. ".lua")
+end
+
+-- For files under UserConfig/
+local function load_usr_module(name)
+  dofile(hyprDir .. "/UserConfigs/" .. name .. ".lua")
+end
+
+-- Sourcing stranded files
+local function load_single(name)
+  dofile(hyprDir .. name .. ".lua")
 end
 
 -- In Lua workflow, runtime config is loaded from split files under:
@@ -27,4 +39,5 @@ load_module("monitors")
 load_module("workspaces")
 load_module("env_variables")
 load_module("decor")
+load_module("window_rule")
 
